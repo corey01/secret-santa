@@ -1,7 +1,6 @@
 // import { useEffect } from 'react';
-import { Suspense } from 'react';
-import { generateResults, getUsers, setUser } from '@/firebase/firestore';
-import SecretSanta from './_components/SecretSanta';
+import { generateResults, getUsers } from "@/firebase/firestore";
+import SecretSanta from "./_components/SecretSanta";
 
 export default async function Home() {
   // if no localstorage object, ask who are you?
@@ -15,7 +14,6 @@ export default async function Home() {
   // if total entrants is less than 6, show message saying come back soon
 
   const allUsers = await getUsers();
-  console.log(allUsers);
 
   // generateResults();
 
