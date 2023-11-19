@@ -15,7 +15,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("/nextjs-github-pages/background.jpg");
+  background-image: url("/background.jpg");
   background-size: cover;
   color: #fff;
   text-align: center;
