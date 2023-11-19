@@ -35,7 +35,7 @@ export async function setUser(username: string) {
 const pickRandomUser = (usersArray: string[], currentUser: string) => {
   const randomNumber = Math.floor(Math.random() * usersArray.length);
   if (usersArray[randomNumber] === currentUser) {
-    pickRandomUser(usersArray, currentUser);
+    return pickRandomUser(usersArray, currentUser);
   }
   return { user: usersArray[randomNumber], arrayIndex: randomNumber };
 };
